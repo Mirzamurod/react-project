@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Pricing = ({ name }) => {
+const Pricing = () => {
     return (
-        <div>
+        <>
             <h1></h1>
-        </div>
+        </>
     )
 }
 

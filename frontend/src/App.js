@@ -7,7 +7,7 @@ const App = () => {
     return (
         <Router>
             <Route path='/login' component={ Login } exact />
-            {/* <Route path="/header" component={ Header } exact /> */}
+            <Route path="/" component={ Header } exact />
         </Router>
     )
 }
