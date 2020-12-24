@@ -1,30 +1,89 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import { Container } from 'react-bootstrap'
-import LoginHeader from '../components/LoginHeader'
-import App from '../App'
-import Dashboard from './../screens/Dashboard'
-import Pricing from './../screens/Pricing'
-import Lock from './../screens/Lock'
-import Registor from './../screens/Registor'
+import {
+    Button,
+    FormControl,
+    InputAdornment,
+    InputLabel,
+    Input,
+    Grid,
+} from '@material-ui/core'
+import FaceIcon from '@material-ui/icons/Face'
+import EmailIcon from '@material-ui/icons/Email'
+import LockIcon from '@material-ui/icons/Lock'
+import './../css/login.css'
 
 const Login = () => {
     return (
-        <Router>
-            <LoginHeader />
-            <main>
-                <Container>
-                    <Switch>
-                        <Route path='/' exact component={App} />
-                        <Route path='/dashboard-page' exact component={Dashboard} />
-                        <Route path='/pricing-page' exact component={Pricing} />
-                        <Route path='/registor-page' exact component={Registor} />
-                        {/* <Route path="/login-page" exact component={ Login } /> */}
-                        <Route path='/lock-page' exact component={Lock} />
-                    </Switch>
-                </Container>
-            </main>
-        </Router>
+        <main>
+            <Grid container direction='row' justify='center' alignItems='center'>
+                <form action=''>
+                    <div className='center-login'>
+                        <div className='regicon'>
+                            <p className='ts'>Log in</p>
+                            <div className='text-center'>
+                                <Button className='is' color='secondary'>
+                                    <i className='fab fa-facebook-square' />
+                                </Button>
+                                <Button className='is' color='secondary'>
+                                    <i className='fab fa-twitter' />
+                                </Button>
+                                <Button className='is' color='secondary'>
+                                    <i className='fab fa-google-plus' />
+                                </Button>
+                            </div>
+                        </div>
+                        <div className='nep'>
+                            <div className='iwh'>
+                                <FormControl color='secondary'>
+                                    <InputLabel htmlFor='firstname'>First Name...</InputLabel>
+                                    <Input
+                                        id='firstname'
+                                        endAdornment={
+                                            <InputAdornment position='end'>
+                                                <FaceIcon />
+                                            </InputAdornment>
+                                        }
+                                    />
+                                </FormControl>
+                            </div>
+                            <div className='iwh'>
+                                <FormControl color='secondary'>
+                                    <InputLabel htmlFor='email'>Email</InputLabel>
+                                    <Input
+                                        type='email'
+                                        id='email'
+                                        endAdornment={
+                                            <InputAdornment position='end'>
+                                                <EmailIcon />
+                                            </InputAdornment>
+                                        }
+                                    />
+                                </FormControl>
+                            </div>
+                            <div className='iwh'>
+                                <FormControl color='secondary'>
+                                    <InputLabel htmlFor='password'>Password</InputLabel>
+                                    <Input
+                                        type='password'
+                                        id='password'
+                                        endAdornment={
+                                            <InputAdornment position='end'>
+                                                <LockIcon />
+                                            </InputAdornment>
+                                        }
+                                    />
+                                </FormControl>
+                            </div>
+                        </div>
+                        <div>
+                            <Button type='submit' color='secondary' className='btn-block btns text-center'>
+                                Let's Go
+                            </Button>
+                        </div>
+                    </div>
+                </form>
+            </Grid>
+        </main>
     )
 }
 

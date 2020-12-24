@@ -1,3 +1,77 @@
 body {
-    background-image: url('/images/wallpaper.jpg');
+    background-image: url('./../images/login.59fc83e2.jpeg') !important;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.center-login {
+    position: relative;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 20px !important;
+    display: flex;
+    color: #fff;
+    border: 0;
+    display: flex;
+    font-size: .875rem;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    flex-direction: column;
+    margin-top: 100px !important;
+    margin-bottom: 30px !important;
+}
+
+.regicon {
+    position: absolute;
+    width: 310px;
+    height: 109px;
+    border-radius: 3px;
+    top: -20px;
+    background-color: #f44336 !important;
+    background-image: linear-gradient(60deg, #ec407a, #d81b60);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0,.14), 0 7px 10px -5px rgba(233, 30, 99,.4);
+}
+
+.ts {
+    font-size: 1.3em;
+    line-height: 1.4em;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    text-align: center !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.is {
+    width: 41px !important;
+    height: 41px !important;
+    padding: 12px !important;
+    font-size: 20px !important;
+    line-height: 41px !important;
+    color: #fff !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}
+
+.nep {
+    margin-top: 100px !important;
+}
+
+.nep .iwh {
+    margin-bottom: 20px;
+}
+
+.iwh input {
+    height: 30px !important;
+    width: 278px !important;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btns {
+    margin: 25px auto !important;
+    height: 50px !important;
 }
