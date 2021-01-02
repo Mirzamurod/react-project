@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box !important;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+}
+
+h2, h4 {
+    font-weight: 300 !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+p {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.color {
+    color: #3a4558 !important;
+}
+
+body {
+    background-image: url('./../images/register.49b54380.png') !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+}
+
+.registor-size {
+    width: 60% !important;
+    border-radius: 5px !important;
+    background-color: #fff !important;
+    margin: 200px auto !important;
+    padding: 30px !important;
+}
+
+.tr {
+    font-size: 2.6em !important;
+    line-height: 1.5em !important;
+    padding: 0 !important;
+    margin: 0 0 3px 0 !important;
+}
+
+.px-l {
+    padding: 20px 40px 10px 60px !important;
+}
+
+.px-r {
+    padding: 20px 60px 10px 40px !important;
+}
+
+.color-p {
+    color: #999 !important;
+}
+
+.l-3 {
+    width: 35px !important;
+}
+
+.iconsize {
+    width: 36px !important;
+    height: 36px !important;
+}
+
+.mb-40 {
+    margin-top: 30px !important;
+    margin-bottom: 40px !important;
+}
+
+.r-7 {
+    padding-left: 10px !important;
+    padding-top: 10px !important;
+    width: 323px !important;
+}
+
+.r-7 h4 {
+    margin: 0 !important;
+    margin-bottom: 15px !important;
+    font-size: 18px !important;
+}
+
+.r-7 p {
+    font-size: 14px !important;
+    text-align: justify;
+}
+
+.tdf > button {
+    max-width: 41px !important;
+    width: 41px !important;
+    min-width: 41px !important;
+    height: 41px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
+    margin: 5px !important;
+}
+
+.tdf h4 {
+    margin: 10px !important;
+    line-height: 1.4em !important;
+
+}
+
+.ct {
+    background-color: #3ba1ee !important;
+}
+
+.cd {
+    background-color: #ff0085 !important;
+}
+
+.cf {
+    background-color: #1a237e !important;
+}
+
+.ic {
+    width: 100% !important;
+    height: 100% !important;
+    color: #fff !important;
+}
+
+.riwh {
+    margin: 30px auto !important;
+}
+
+.riwh input{
+    display: block !important;
+    width: 358px !important;
+    height: 30px !important;
+}
+
+.rcheckbox {
+    margin-top: -20px !important;
+}
+
+.rcheckbox .rmt-18 {
+    margin-top: -1.8px !important;
+}
+
+.rcheckbox label {
+    margin-right: 5px !important;
+}
+
+.rcheckbox a {
+    text-decoration: none !important;
+}
+
+.btnbgc {
+    background-color: #b700af !important;
+    color: #fff !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    margin: 5px 1px !important;
+    padding: 12px 30px !important;
+    border-radius: 30px !important;
+}

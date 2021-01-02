@@ -10,13 +10,14 @@ import {
 import FaceIcon from '@material-ui/icons/Face'
 import EmailIcon from '@material-ui/icons/Email'
 import LockIcon from '@material-ui/icons/Lock'
+import { LinkContainer } from 'react-router-bootstrap'
 import './../css/login.css'
 
 const Login = () => {
     return (
         <main>
             <Grid container direction='row' justify='center' alignItems='center'>
-                <form action=''>
+                <form action='/login-page'>
                     <div className='center-login'>
                         <div className='regicon'>
                             <p className='ts'>Log in</p>
@@ -28,12 +29,14 @@ const Login = () => {
                                     <i className='fab fa-twitter' />
                                 </Button>
                                 <Button className='is' color='secondary'>
-                                    <i className='fab fa-google-plus' />
+                                    <LinkContainer to='/auth/google'>
+                                        <i className='fab fa-google-plus' />
+                                    </LinkContainer>
                                 </Button>
                             </div>
                         </div>
                         <div className='nep'>
-                            <div className='iwh'>
+                            <div className='liwh'>
                                 <FormControl color='secondary'>
                                     <InputLabel htmlFor='firstname'>First Name...</InputLabel>
                                     <Input
@@ -46,7 +49,7 @@ const Login = () => {
                                     />
                                 </FormControl>
                             </div>
-                            <div className='iwh'>
+                            <div className='liwh'>
                                 <FormControl color='secondary'>
                                     <InputLabel htmlFor='email'>Email</InputLabel>
                                     <Input
@@ -60,7 +63,7 @@ const Login = () => {
                                     />
                                 </FormControl>
                             </div>
-                            <div className='iwh'>
+                            <div className='liwh'>
                                 <FormControl color='secondary'>
                                     <InputLabel htmlFor='password'>Password</InputLabel>
                                     <Input
@@ -76,7 +79,11 @@ const Login = () => {
                             </div>
                         </div>
                         <div>
-                            <Button type='submit' color='secondary' className='btn-block btns text-center'>
+                            <Button
+                                type='submit'
+                                color='secondary'
+                                className='btn-block btns text-center'
+                            >
                                 Let's Go
                             </Button>
                         </div>

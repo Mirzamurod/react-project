@@ -57,178 +57,178 @@ const Header = () => {
 
     return (
         <>
-            {/* CREATIVE TIM */}
-            <Accordion className='bgct'>
-                <AccordionDetails>
-                    <Typography>
-                        <LinkContainer to='/'>
-                            <Link>
-                            <span className='iconsvg whitelogo' />
-                                CREATIVE TIM
-                            </Link>
-                        </LinkContainer>
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
-            {/* User */}
-            <Accordion className='bgct'
-                expanded={expanded === 'panel1'}
-                onChange={handleChange('panel1')}
-            >
-                <AccordionSummary
-                    expandIcon={<ArrowDropDownIcon />}
-                    aria-controls='panel1bh-content'
-                    id='panel1bh-header'
+            <div>
+                {/* CREATIVE TIM */}
+                <Accordion className='bgct'>
+                    <AccordionDetails>
+                        <Typography>
+                            <LinkContainer to='/'>
+                                <Link>
+                                <span className='iconsvg whitelogo' />
+                                    CREATIVE TIM
+                                </Link>
+                            </LinkContainer>
+                        </Typography>
+                    </AccordionDetails>
+                </Accordion>
+                {/* User */}
+                <Accordion className='bgct'
+                    expanded={expanded === 'panel1'}
+                    onChange={handleChange('panel1')}
                 >
-                    <Typography className=''>User Name</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                    <Typography>
-                        <LinkContainer to='/user-profile'>
-                            <Link>My Profile</Link>
-                        </LinkContainer>
-                    </Typography>
-                </AccordionDetails>
-                <AccordionDetails>
-                    <Typography>
-                        <LinkContainer to='/user-edit-profile'>
-                            <Link>Edit Profile</Link>
-                        </LinkContainer>
-                    </Typography>
-                </AccordionDetails>
-                <AccordionDetails>
-                    <Typography>
-                        <LinkContainer to='/user-profile-settings'>
-                            <Link>Settings</Link>
-                        </LinkContainer>
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
-            {/* Dashboard */}
-            <Accordion className='bgct'>
-                <AccordionDetails>
-                    <Typography>
-                        <LinkContainer to='/'>
-                            <Link>Dashboard</Link>
-                        </LinkContainer>
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
-            {/* Pages */}
-            <Accordion className='bgct'
-                expanded={expanded === 'panel2'}
-                onChange={handleChange('panel2')}
-                color='secondary'
-            >
-                <AccordionSummary
-                    expandIcon={<ArrowDropDownIcon />}
-                    aria-controls='panel2bh-content'
-                    id='panel2bh-header'
+                    <AccordionSummary
+                        expandIcon={<ArrowDropDownIcon />}
+                        aria-controls='panel1bh-content'
+                        id='panel1bh-header'
+                    >
+                        <Typography className=''>User Name</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Typography>
+                            <LinkContainer to='/user-profile'>
+                                <Link>My Profile</Link>
+                            </LinkContainer>
+                        </Typography>
+                    </AccordionDetails>
+                    <AccordionDetails>
+                        <Typography>
+                            <LinkContainer to='/user-edit-profile'>
+                                <Link>Edit Profile</Link>
+                            </LinkContainer>
+                        </Typography>
+                    </AccordionDetails>
+                    <AccordionDetails>
+                        <Typography>
+                            <LinkContainer to='/user-profile-settings'>
+                                <Link>Settings</Link>
+                            </LinkContainer>
+                        </Typography>
+                    </AccordionDetails>
+                </Accordion>
+                {/* Dashboard */}
+                <Accordion className='bgct'>
+                    <AccordionDetails>
+                        <Typography>
+                            <LinkContainer to='/'>
+                                <Link>Dashboard</Link>
+                            </LinkContainer>
+                        </Typography>
+                    </AccordionDetails>
+                </Accordion>
+                {/* Pages */}
+                <Accordion className='bgct'
+                    expanded={expanded === 'panel2'}
+                    onChange={handleChange('panel2')}
+                    color='secondary'
                 >
-                    <Typography className=''>
-                        <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
-                        Pages
-                    </Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                    <Typography>
-                        <LinkContainer to='/pricing-page'>
-                            <Link>Pricing Page</Link>
-                        </LinkContainer>
-                    </Typography>
-                </AccordionDetails>
-                <AccordionDetails>
-                    <Typography>
-                        <LinkContainer to='/timeline-page'>
-                            <Link>Timeline Page</Link>
-                        </LinkContainer>
-                    </Typography>
-                </AccordionDetails>
-                <AccordionDetails>
-                    <Typography>
-                        <LinkContainer to='/login-page'>
-                            <Link>Login Page</Link>
-                        </LinkContainer>
-                    </Typography>
-                </AccordionDetails>
-                <AccordionDetails>
-                    <Typography>
-                        <LinkContainer to='/registor-page'>
-                            <Link>Registor Page</Link>
-                        </LinkContainer>
-                    </Typography>
-                </AccordionDetails>
-                <AccordionDetails>
-                    <Typography>
-                        <LinkContainer to='/lock-page'>
-                            <Link>Lock Screen Page</Link>
-                        </LinkContainer>
-                    </Typography>
-                </AccordionDetails>
-                <AccordionDetails>
-                    <Typography>
-                        <LinkContainer to='/user-profile'>
-                            <Link>User Profile</Link>
-                        </LinkContainer>
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
-            {/* Maps */}
-            <Accordion className='bgct'
-                expanded={expanded === 'panel3'}
-                onChange={handleChange('panel3')}
-            >
-                <AccordionSummary
-                    expandIcon={<ArrowDropDownIcon />}
-                    aria-controls='panel3bh-content'
-                    id='panel3bh-header'
+                    <AccordionSummary
+                        expandIcon={<ArrowDropDownIcon />}
+                        aria-controls='panel2bh-content'
+                        id='panel2bh-header'
+                    >
+                        <Typography className=''>
+                            Pages
+                        </Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Typography>
+                            <LinkContainer to='/pricing-page'>
+                                <Link>Pricing Page</Link>
+                            </LinkContainer>
+                        </Typography>
+                    </AccordionDetails>
+                    <AccordionDetails>
+                        <Typography>
+                            <LinkContainer to='/timeline-page'>
+                                <Link>Timeline Page</Link>
+                            </LinkContainer>
+                        </Typography>
+                    </AccordionDetails>
+                    <AccordionDetails>
+                        <Typography>
+                            <LinkContainer to='/login-page'>
+                                <Link>Login Page</Link>
+                            </LinkContainer>
+                        </Typography>
+                    </AccordionDetails>
+                    <AccordionDetails>
+                        <Typography>
+                            <LinkContainer to='/registor-page'>
+                                <Link>Registor Page</Link>
+                            </LinkContainer>
+                        </Typography>
+                    </AccordionDetails>
+                    <AccordionDetails>
+                        <Typography>
+                            <LinkContainer to='/lock-page'>
+                                <Link>Lock Screen Page</Link>
+                            </LinkContainer>
+                        </Typography>
+                    </AccordionDetails>
+                    <AccordionDetails>
+                        <Typography>
+                            <LinkContainer to='/user-profile'>
+                                <Link>User Profile</Link>
+                            </LinkContainer>
+                        </Typography>
+                    </AccordionDetails>
+                </Accordion>
+                {/* Maps */}
+                <Accordion className='bgct'
+                    expanded={expanded === 'panel3'}
+                    onChange={handleChange('panel3')}
                 >
-                    <Typography className=''>Maps</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                    <Typography>
-                        <LinkContainer to='/google-maps'>
-                            <Link>Google Maps</Link>
-                        </LinkContainer>
-                    </Typography>
-                </AccordionDetails>
-                <AccordionDetails>
-                    <Typography>
-                        <LinkContainer to='/full-screen-map'>
-                            <Link>Full Screen Map</Link>
-                        </LinkContainer>
-                    </Typography>
-                </AccordionDetails>
-                <AccordionDetails>
-                    <Typography>
-                        <LinkContainer to='/vactor-map'>
-                            <Link>Vector Map</Link>
-                        </LinkContainer>
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
-            {/* Widgets */}
-            <Accordion className='bgct'>
-                <AccordionDetails>
-                    <Typography>
-                        <LinkContainer to='/widgets'>
-                            <Link>Widgets</Link>
-                        </LinkContainer>
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
-            {/* Charts */}
-            <Accordion className='bgct'>
-                <AccordionDetails>
-                    <Typography>
-                        <LinkContainer to='/charts'>
-                            <Link>Charts</Link>
-                        </LinkContainer>
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
-            {/* Calendar */}
-            <Accordion className='bgct'>
+                    <AccordionSummary
+                        expandIcon={<ArrowDropDownIcon />}
+                        aria-controls='panel3bh-content'
+                        id='panel3bh-header'
+                    >
+                        <Typography className=''>Maps</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Typography>
+                            <LinkContainer to='/google-maps'>
+                                <Link>Google Maps</Link>
+                            </LinkContainer>
+                        </Typography>
+                    </AccordionDetails>
+                    <AccordionDetails>
+                        <Typography>
+                            <LinkContainer to='/full-screen-map'>
+                                <Link>Full Screen Map</Link>
+                            </LinkContainer>
+                        </Typography>
+                    </AccordionDetails>
+                    <AccordionDetails>
+                        <Typography>
+                            <LinkContainer to='/vector-map'>
+                                <Link>Vector Map</Link>
+                            </LinkContainer>
+                        </Typography>
+                    </AccordionDetails>
+                </Accordion>
+                {/* Widgets */}
+                <Accordion className='bgct'>
+                    <AccordionDetails>
+                        <Typography>
+                            <LinkContainer to='/widgets'>
+                                <Link>Widgets</Link>
+                            </LinkContainer>
+                        </Typography>
+                    </AccordionDetails>
+                </Accordion>
+                {/* Charts */}
+                <Accordion className='bgct'>
+                    <AccordionDetails>
+                        <Typography>
+                            <LinkContainer to='/charts'>
+                                <Link>Charts</Link>
+                            </LinkContainer>
+                        </Typography>
+                    </AccordionDetails>
+                </Accordion>
+                {/* Calendar */}
+                <Accordion className='bgct'>
                 <AccordionDetails>
                     <Typography>
                         <LinkContainer to='/calendar'>
@@ -237,6 +237,7 @@ const Header = () => {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
+            </div>
         </>
     )
 }

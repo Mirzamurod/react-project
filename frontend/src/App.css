@@ -20,9 +20,10 @@ body {
 .mw-250 {
     -ms-flex: 0 0 13.020833333% !important;
     flex: 0 0 13.020833333% !important;
-    max-width: 13.020833333% !important;
+    width: 13.020833333% !important;
     height: 100vh !important;
     background-color: #3a3a3a86 !important;
+    position: fixed;
 }
 
 .iconsvg {
@@ -44,8 +45,9 @@ body {
 .mw-750 {
     -ms-flex: 0 0 86.97916666% !important;
     flex: 0 0 86.97916666% !important;
-    max-width: 86.97916666% !important;
+    width: 86.97916666% !important;
     padding: 0 15px !important;
+    margin-left: 13.020833333% !important;
 }
 
 .bgc {
