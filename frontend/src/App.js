@@ -5,7 +5,7 @@ import Login from './screens/Login'
 import Index1 from './screens/Index1'
 import Pricing from './screens/Pricing'
 import Lock from './screens/Lock'
-import Registor from './screens/Registor'
+import Register from './screens/Register'
 import Timeline from './screens/Timeline'
 import Calendar from './screens/Calendar'
 import Charts from './screens/Charts'
@@ -32,7 +32,7 @@ const App = () => {
                             <Route path='/login-page' component={Login} exact />
                             <Route path='/lock-page' component={Lock} exact />
                             <Route path='/pricing-page' component={Pricing} exact />
-                            <Route path='/registor-page' component={Registor} exact />
+                            <Route path='/register-page' component={Register} exact />
                             <Route path='/timeline-page' component={Timeline} exact />
                             <Route path='/calendar' component={Calendar} exact />
                             <Route path='/charts' component={Charts} exact />

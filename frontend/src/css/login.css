@@ -32,8 +32,9 @@ body {
 }
 
 .ts {
-    font-size: 1.3em;
-    line-height: 1.4em;
+    font-size: 1.3em !important;
+    margin: 17px auto !important;
+    line-height: 1.4em !important;
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     text-align: center !important;
 }

@@ -153,8 +153,8 @@ const Header = () => {
                     </AccordionDetails>
                     <AccordionDetails>
                         <Typography>
-                            <LinkContainer to='/registor-page'>
-                                <Link>Registor Page</Link>
+                            <LinkContainer to='/register-page'>
+                                <Link>Register Page</Link>
                             </LinkContainer>
                         </Typography>
                     </AccordionDetails>
@@ -241,5 +241,5 @@ const Header = () => {
         </>
     )
 }
-//
+
 export default Header

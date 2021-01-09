@@ -41,6 +41,7 @@ const Login = () => {
                                     <InputLabel htmlFor='firstname'>First Name...</InputLabel>
                                     <Input
                                         id='firstname'
+                                        name='username'
                                         endAdornment={
                                             <InputAdornment position='end'>
                                                 <FaceIcon />
@@ -55,6 +56,7 @@ const Login = () => {
                                     <Input
                                         type='email'
                                         id='email'
+                                        name='email'
                                         endAdornment={
                                             <InputAdornment position='end'>
                                                 <EmailIcon />
@@ -69,6 +71,7 @@ const Login = () => {
                                     <Input
                                         type='password'
                                         id='password'
+                                        name='password'
                                         endAdornment={
                                             <InputAdornment position='end'>
                                                 <LockIcon />

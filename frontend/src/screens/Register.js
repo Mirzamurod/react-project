@@ -18,7 +18,7 @@ import LockIcon from '@material-ui/icons/Lock'
 import './../css/registor.css'
 import { LinkContainer } from 'react-router-bootstrap'
 
-const Registor = () => {
+const Register = () => {
     return (
         <>
             <Grid
@@ -70,16 +70,16 @@ const Registor = () => {
                     </div>
                 </Grid>
                 <Grid item xs={6} className='px-r'>
-                    <form method='POST' action='/registor-page'>
+                    <form method='POST' action='/register-page'>
                         <div className='tdf text-center'>
                             <Button className='ct' variant='contained'>
-                                <i class='fab fa-twitter ic' />
+                                <i className='fab fa-twitter ic' />
                             </Button>
                             <Button className='cd' variant='contained'>
-                                <i class='fab fa-dribbble ic' />
+                                <i className='fab fa-dribbble ic' />
                             </Button>
                             <Button className='cf' variant='contained'>
-                                <i class='fab fa-facebook-f ic' />
+                                <i className='fab fa-facebook-f ic' />
                             </Button>
                             <h4>or be classical</h4>
                         </div>
@@ -89,7 +89,7 @@ const Registor = () => {
                                     type='text'
                                     id='firstname'
                                     placeholder='First Name...'
-                                    name='name'
+                                    name='username'
                                     startAdornment={
                                         <InputAdornment position='start'>
                                             <FaceIcon />
@@ -161,4 +161,4 @@ const Registor = () => {
     )
 }
 
-export default Registor
+export default Register

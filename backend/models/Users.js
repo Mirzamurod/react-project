@@ -1,15 +1,7 @@
 import mongoose from 'mongoose'
-// import findOrCreate from 'mongoose-find-or-create'
 
 const userSchema = mongoose.Schema({
-    // googleId: {
-    //     type: String,
-    //     unique: true
-    // },
-    // name: String,
-    // surname: String,
-    // profilePhotoUrl: String
-    name: {
+    username: {
         type: String,
         required: true
     },
@@ -23,8 +15,6 @@ const userSchema = mongoose.Schema({
         required: true
     }
 })
-
-// userSchema.plugin(findOrCreate)
 
 const User = mongoose.model('users', userSchema)
 
