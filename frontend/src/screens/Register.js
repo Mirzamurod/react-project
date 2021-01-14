@@ -1,4 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import Message from '../components/Message'
+import Loader from '../components/Loader'
+import { register } from '../actions/userActions'
 import {
     Button,
     Checkbox,
@@ -7,7 +11,6 @@ import {
     Grid,
     Input,
     InputAdornment,
-    Link,
 } from '@material-ui/core'
 import EqualizerIcon from '@material-ui/icons/Equalizer'
 import CodeIcon from '@material-ui/icons/Code'
@@ -15,12 +18,38 @@ import GroupIcon from '@material-ui/icons/Group'
 import FaceIcon from '@material-ui/icons/Face'
 import EmailIcon from '@material-ui/icons/Email'
 import LockIcon from '@material-ui/icons/Lock'
+import { Link } from 'react-router-dom'
 import './../css/registor.css'
-import { LinkContainer } from 'react-router-bootstrap'
 
-const Register = () => {
+const Register = ({ location, history }) => {
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+    // const [message, setMessage] = useState(null)
+
+    const dispatch = useDispatch()
+
+    const userRegister = useSelector(state => state.userRegister)
+    const { loading, error, userInfo } = userRegister
+
+    const redirect = location.search ? location.search.split('=')[1] : '/'
+
+    useEffect(() => {
+        if (userInfo) {
+            history.push(redirect)
+        }
+    }, [history, userInfo, redirect])
+
+    const submitHandler = e => {
+        e.preventDefault()
+        dispatch(register(name, email, password))
+    }
+
     return (
         <>
+            {/* {message && <Message variant='danger'>{message}</Message>} */}
+            {error && <Message variant='danger'>{error}</Message>}
+            {loading && <Loader />}
             <Grid
                 container
                 // direction='row'
@@ -70,7 +99,7 @@ const Register = () => {
                     </div>
                 </Grid>
                 <Grid item xs={6} className='px-r'>
-                    <form method='POST' action='/register-page'>
+                    <form onSubmit={submitHandler}>
                         <div className='tdf text-center'>
                             <Button className='ct' variant='contained'>
                                 <i className='fab fa-twitter ic' />
@@ -84,12 +113,14 @@ const Register = () => {
                             <h4>or be classical</h4>
                         </div>
                         <div className='riwh'>
-                            <FormControl color='secondary'>
+                            <FormControl color='secondary' controlId='name'>
                                 <Input
-                                    type='text'
-                                    id='firstname'
+                                    type='name'
+                                    // id='name'
                                     placeholder='First Name...'
-                                    name='username'
+                                    // name='username'
+                                    value={name}
+                                    onChange={e => setName(e.target.value)}
                                     startAdornment={
                                         <InputAdornment position='start'>
                                             <FaceIcon />
@@ -99,12 +130,14 @@ const Register = () => {
                             </FormControl>
                         </div>
                         <div className='riwh'>
-                            <FormControl color='secondary'>
+                            <FormControl color='secondary' controlId='email'>
                                 <Input
                                     type='email'
-                                    id='email'
+                                    // id='email'
                                     placeholder='Email...'
-                                    name='email'
+                                    // name='email'
+                                    value={email}
+                                    onChange={e => setEmail(e.target.value)}
                                     startAdornment={
                                         <InputAdornment position='start'>
                                             <EmailIcon />
@@ -114,12 +147,14 @@ const Register = () => {
                             </FormControl>
                         </div>
                         <div className='riwh'>
-                            <FormControl color='secondary'>
+                            <FormControl color='secondary' controlId='password'>
                                 <Input
                                     type='password'
-                                    id='password'
+                                    // id='password'
                                     placeholder='Password...'
-                                    name='password'
+                                    // name='password'
+                                    value={password}
+                                    onChange={e => setPassword(e.target.value)}
                                     startAdornment={
                                         <InputAdornment position='start'>
                                             <LockIcon />
@@ -145,9 +180,9 @@ const Register = () => {
                                 }
                                 label={'I agree to the'}
                             />
-                            <LinkContainer to='/404'>
+                            <Link to='/404'>
                                 <Link color='secondary'>terms and conditions</Link>
-                            </LinkContainer>
+                            </Link>
                         </div>
                         <div className='text-center'>
                             <Button className='btnbgc' variant='contained' type='submit'>

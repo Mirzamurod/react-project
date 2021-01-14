@@ -1,9 +1,13 @@
-*{
+* {
     box-sizing: border-box !important;
 }
 
 body {
     margin: 0;
+}
+
+a {
+    text-decoration: none !important;
 }
 
 .d-f {
@@ -13,7 +17,7 @@ body {
     flex-wrap: wrap;
 }
 
-.pl-8{
+.pl-8 {
     padding-left: 16px !important;
 }
 
@@ -38,7 +42,9 @@ body {
     border-top-color: transparent !important;
 }
 
-.bgct a, .bgct p, .bgct svg {
+.bgct a,
+.bgct p,
+.bgct svg {
     color: #fff !important;
 }
 
@@ -54,11 +60,12 @@ body {
     background-color: #333 !important;
 }
 
-.bgc a, .bgc button {
+.bgc a,
+.bgc button {
     color: #fff !important;
     font-size: 14px !important;
 }
 
-.btnfocus:focus, .btnfocus:hover, .btnfocus:active {
-    border-color: transparent !important;
+.cursor-p {
+    cursor: pointer !important;
 }

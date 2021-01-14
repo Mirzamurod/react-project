@@ -76,3 +76,7 @@ body {
     margin: 25px auto !important;
     height: 50px !important;
 }
+
+.text-black {
+    color: #313131 !important
+}
