@@ -26,8 +26,16 @@ a {
     flex: 0 0 13.020833333% !important;
     width: 13.020833333% !important;
     height: 100vh !important;
-    background-color: #3a3a3a86 !important;
+    background-color: #fb404b !important;
     position: fixed;
+}
+
+.mw-750 {
+    -ms-flex: 0 0 86.97916666% !important;
+    flex: 0 0 86.97916666% !important;
+    width: 86.97916666% !important;
+    padding: 0 0 0 15px !important;
+    margin-left: 13.020833333% !important;
 }
 
 .iconsvg {
@@ -42,18 +50,15 @@ a {
     border-top-color: transparent !important;
 }
 
+.bgct > div {
+    border-bottom: 0 !important;
+    background-color: transparent !important;
+}
+
 .bgct a,
 .bgct p,
 .bgct svg {
     color: #fff !important;
-}
-
-.mw-750 {
-    -ms-flex: 0 0 86.97916666% !important;
-    flex: 0 0 86.97916666% !important;
-    width: 86.97916666% !important;
-    padding: 0 15px !important;
-    margin-left: 13.020833333% !important;
 }
 
 .bgc {

@@ -32,7 +32,7 @@ const Register = ({ location, history }) => {
     const userRegister = useSelector(state => state.userRegister)
     const { loading, error, userInfo } = userRegister
 
-    const redirect = location.search ? location.search.split('=')[1] : '/'
+    const redirect = location.search ? location.search.split('=')[1] : '/login'
 
     useEffect(() => {
         if (userInfo) {
@@ -113,7 +113,7 @@ const Register = ({ location, history }) => {
                             <h4>or be classical</h4>
                         </div>
                         <div className='riwh'>
-                            <FormControl color='secondary' controlId='name'>
+                            <FormControl color='secondary'>
                                 <Input
                                     type='name'
                                     // id='name'
@@ -130,7 +130,7 @@ const Register = ({ location, history }) => {
                             </FormControl>
                         </div>
                         <div className='riwh'>
-                            <FormControl color='secondary' controlId='email'>
+                            <FormControl color='secondary'>
                                 <Input
                                     type='email'
                                     // id='email'
@@ -147,7 +147,7 @@ const Register = ({ location, history }) => {
                             </FormControl>
                         </div>
                         <div className='riwh'>
-                            <FormControl color='secondary' controlId='password'>
+                            <FormControl color='secondary'>
                                 <Input
                                     type='password'
                                     // id='password'
@@ -164,11 +164,6 @@ const Register = ({ location, history }) => {
                             </FormControl>
                         </div>
                         <div className='rcheckbox'>
-                            {/* <Checkbox
-                                defaultChecked
-                                color='default'
-                                inputProps={{ 'aria-label': 'checkbox with default color' }}
-                            /> */}
                             <FormControlLabel
                                 className='color rmt-18'
                                 control={

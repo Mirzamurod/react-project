@@ -1,7 +1,5 @@
 body {
-    background-image: url('./../images/login.59fc83e2.jpeg') !important;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: #eee !important;
 }
 
 .center-login {

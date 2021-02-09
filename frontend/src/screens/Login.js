@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import {} from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { Button, FormControl, InputAdornment, InputLabel, Input, Grid } from '@material-ui/core'
 import FaceIcon from '@material-ui/icons/Face'
@@ -21,7 +20,7 @@ const Login = ({ location, history }) => {
     const userLogin = useSelector(state => state.userLogin)
     const { loading, error, userInfo } = userLogin
 
-    const redirect = location.search ? location.search.split('=')[1] : '/'
+    const redirect = location.search ? location.search.split('=')[1] : '/dashboard'
 
     useEffect(() => {
         if (userInfo) {
@@ -57,7 +56,7 @@ const Login = ({ location, history }) => {
                         </div>
                         <div className='nep'>
                             <div className='liwh'>
-                                <FormControl color='secondary' controlId='name'>
+                                <FormControl color='secondary'>
                                     <InputLabel htmlFor='firstname'>First Name...</InputLabel>
                                     <Input
                                         type='name'
@@ -74,7 +73,7 @@ const Login = ({ location, history }) => {
                                 </FormControl>
                             </div>
                             <div className='liwh'>
-                                <FormControl color='secondary' controlId='email'>
+                                <FormControl color='secondary'>
                                     <InputLabel htmlFor='email'>Email</InputLabel>
                                     <Input
                                         type='email'
@@ -91,7 +90,7 @@ const Login = ({ location, history }) => {
                                 </FormControl>
                             </div>
                             <div className='liwh'>
-                                <FormControl color='secondary' controlId='password'>
+                                <FormControl color='secondary'>
                                     <InputLabel htmlFor='password'>Password</InputLabel>
                                     <Input
                                         type='password'
@@ -118,7 +117,7 @@ const Login = ({ location, history }) => {
                         </div>
                         <div className='text-black text-center'>
                             New Customer?{' '}
-                            <Link to={redirect ? `/register-page?redirect=${redirect}` : '/register-page'}>
+                            <Link to={redirect ? `/register?redirect=${redirect}` : '/register'}>
                                 Register
                             </Link>
                         </div>

@@ -73,7 +73,7 @@ const Header = () => {
                 <Accordion className='bgct'>
                     <AccordionDetails>
                         <Typography>
-                            <Link to='/'>
+                            <Link to='/dashboard'>
                                 <p>
                                     <span className='iconsvg whitelogo' />
                                     CREATIVE TIM
@@ -98,14 +98,14 @@ const Header = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                <Link to='/user-profile'>
+                                <Link to='/dashboard/user-profile'>
                                     <p>My Profile</p>
                                 </Link>
                             </Typography>
                         </AccordionDetails>
                         <AccordionDetails>
                             <Typography>
-                                <Link to='/user-edit-profile'>
+                                <Link to='/dashboard/user-edit-profile'>
                                     <p>Edit Profile</p>
                                 </Link>
                             </Typography>
@@ -119,7 +119,11 @@ const Header = () => {
                         </AccordionDetails>
                         <AccordionDetails>
                             <Typography>
-                                <p onClick={logoutHandler} className='cursor-p'>Logout</p>
+                                <Link to='/login'>
+                                    <p onClick={logoutHandler} className='cursor-p'>
+                                        Logout
+                                    </p>
+                                </Link>
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
@@ -131,7 +135,7 @@ const Header = () => {
                     >
                         <AccordionDetails>
                             <Typography>
-                                <Link to='/login-page'>
+                                <Link to='/login'>
                                     <p>Sign In</p>
                                 </Link>
                             </Typography>
@@ -142,7 +146,7 @@ const Header = () => {
                 <Accordion className='bgct'>
                     <AccordionDetails>
                         <Typography>
-                            <Link to='/'>
+                            <Link to='/dashboard'>
                                 <p>Dashboard</p>
                             </Link>
                         </Typography>
@@ -164,42 +168,42 @@ const Header = () => {
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography>
-                            <Link to='/pricing-page'>
+                            <Link to='/dashboard/pricing'>
                                 <p>Pricing Page</p>
                             </Link>
                         </Typography>
                     </AccordionDetails>
                     <AccordionDetails>
                         <Typography>
-                            <Link to='/timeline-page'>
+                            <Link to='/dashboard/timeline'>
                                 <p>Timeline Page</p>
                             </Link>
                         </Typography>
                     </AccordionDetails>
                     <AccordionDetails>
                         <Typography>
-                            <Link to='/login-page'>
-                                <p>Login Page</p>
+                            <Link to='/dashboard/bronqilish'>
+                                <p>Konferensiya zalini bron qilish</p>
                             </Link>
                         </Typography>
                     </AccordionDetails>
                     <AccordionDetails>
                         <Typography>
-                            <Link to='/register-page'>
-                                <p>Register Page</p>
+                            <Link to='/dashboard/tables'>
+                                <p>Tables</p>
                             </Link>
                         </Typography>
                     </AccordionDetails>
                     <AccordionDetails>
                         <Typography>
-                            <Link to='/lock-page'>
+                            <Link to='/dashboard/lock'>
                                 <p>Lock Screen Page</p>
                             </Link>
                         </Typography>
                     </AccordionDetails>
                     <AccordionDetails>
                         <Typography>
-                            <Link to='/user-profile'>
+                            <Link to='/dashboard/user-profile'>
                                 <p>User Profile</p>
                             </Link>
                         </Typography>
@@ -220,21 +224,21 @@ const Header = () => {
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography>
-                            <Link to='/google-maps'>
+                            <Link to='/dashboard/google-maps'>
                                 <p>Google Maps</p>
                             </Link>
                         </Typography>
                     </AccordionDetails>
                     <AccordionDetails>
                         <Typography>
-                            <Link to='/full-screen-map'>
+                            <Link to='/dashboard/full-screen-map'>
                                 <p>Full Screen Map</p>
                             </Link>
                         </Typography>
                     </AccordionDetails>
                     <AccordionDetails>
                         <Typography>
-                            <Link to='/vector-map'>
+                            <Link to='/dashboard/vector-map'>
                                 <p>Vector Map</p>
                             </Link>
                         </Typography>
@@ -244,7 +248,7 @@ const Header = () => {
                 <Accordion className='bgct'>
                     <AccordionDetails>
                         <Typography>
-                            <Link to='/widgets'>
+                            <Link to='/dashboard/widgets'>
                                 <p>Widgets</p>
                             </Link>
                         </Typography>
@@ -254,7 +258,7 @@ const Header = () => {
                 <Accordion className='bgct'>
                     <AccordionDetails>
                         <Typography>
-                            <Link to='/charts'>
+                            <Link to='/dashboard/charts'>
                                 <p>Charts</p>
                             </Link>
                         </Typography>
@@ -264,7 +268,7 @@ const Header = () => {
                 <Accordion className='bgct'>
                     <AccordionDetails>
                         <Typography>
-                            <Link to='/calendar'>
+                            <Link to='/dashboard/calendar'>
                                 <p>Calendar</p>
                             </Link>
                         </Typography>

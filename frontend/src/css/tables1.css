@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+.tables1 {
+    color: gray !important;
+    background-color: #fff;
+    border: 1px solid #d4d4d4 !important;
+    border-radius: 3px;
+    margin-right: 15px !important;
+}

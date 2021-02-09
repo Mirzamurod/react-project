@@ -3,6 +3,10 @@
     font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
 }
 
+body {
+    background-color: #eee !important;
+}
+
 h2, h4 {
     font-weight: 300 !important;
 }
@@ -18,12 +22,6 @@ p {
 
 .color {
     color: #3a4558 !important;
-}
-
-body {
-    background-image: url('./../images/register.49b54380.png') !important;
-    background-attachment: fixed !important;
-    background-size: cover !important;
 }
 
 .registor-size {

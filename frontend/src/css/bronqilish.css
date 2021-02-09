@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.navbar1 {
+    margin: 0 0 20px 5px !important;
+    color: gray !important;
+    background-color: #fff !important;
+    border: 1px solid #c4c4c4 !important;
+    border-radius: 3px !important;
+    border-right-color: transparent !important;
+}
+
+.navbar1 .m-15 {
+    margin: 15px !important;
+}
+
+.navbar1 .mt-3 {
+    margin-top: 3px !important;
+}
+
+.bronqilish {
+    margin: 5px 100px 10px 5px !important;
+    color: gray !important;
+    background-color: #fff;
+    border: 1px solid #c4c4c4 !important;
+    border-radius: 3px;
+}
+
+.bronqilish h3 {
+    margin-left: 15px !important;
+}
+
+.bronqilish h4 {
+    margin-top: 60px !important;
+    margin-left: 22px !important;
+}
+
+.b-grid label {
+    top: -9px !important;
+}
+
+.b-grid label.Mui-focused,
+.b-grid label.MuiFormLabel-filled {
+    top: 0px !important;
+}
+
+.b-grid-i label {
+    top: 7px !important;
+    left: 15px !important;
+}
+
+.b-grid-i label.Mui-focused,
+.b-grid-i label.MuiFormLabel-filled {
+    top: 15px !important;
+}
+
+.b-grid-4 {
+    margin-top: 14px !important;
+}
+
+.bronqilish .f-right {
+    float: right !important;
+}
+
+.bronqilish .kt {
+    padding-left: 22px !important;
+}
+
+.bronqilish .b-border {
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+    margin-bottom: 200px !important;
+}
+
+.bronqilish ol {
+    padding-left: 30px !important;
+}
+
+.bronqilish ol li {
+    line-height: 1rem;
+    margin: 10px auto;
+}
